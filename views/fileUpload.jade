@@ -1,0 +1,17 @@
+extends layout
+block content
+  h3 Simple file upload in nodeJs with progress bar
+  form(name="fileUpload", action="/fileUpload",enctype="multipart/form-data", method="post",role="form", class="form-inline")
+    .form-group
+      label Choose image to upload: 
+      input(name="uploadfile", type="file", id="myFile")
+      span(style="color:red") Upload only image file (PNG, JPEG, GIF)
+    .form-group
+      input(value="UPLOAD", type="button", class="btn btn-primary")
+    div(class="progress",style="display:none;margin-top:10px;")
+     div(class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100") 0% 
+      
+   div
+   h3 List all uploaded files  
+  p(id="msg")
+   #files       
