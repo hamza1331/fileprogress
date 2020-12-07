@@ -7,7 +7,4 @@ File upload in nodeJs with progress bar
 
 ```npm install```
 ```node app.js```
-
-For demo click this link 
-http://lab.iamrohit.in/node-file-upload
  
